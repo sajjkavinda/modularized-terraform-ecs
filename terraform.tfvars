@@ -195,7 +195,16 @@ aurorards_admin_password               = ""
 pub_alb-sg         = "nonp-soms_v2-apse1-pub_alb-sg"
 ecs-sg             = "nonp-soms_v2-apse1-ecs-sg"
 rds-postgre_sql-sg = "nonp-soms_v2-apse1-rds-sg"
-
+alb_sg_cidr_block = ""
+alb_sg_from_port = 80
+alb_sg_to_port = 80
+alb_sg_protocol = "tcp"
+ecs_sg_from_port =  80
+ecs_sg_to_port = 80
+ecs_sg_protocol = "tcp"
+rds_sg_from_port = 5432
+rds_sg_to_port = 5432
+rds_sg_protocol = "tcp"
 #WAF
 
 waf = "nonp-soms_v2-apse1-waf"

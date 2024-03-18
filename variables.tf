@@ -258,9 +258,9 @@ variable "task_memory" {
 variable "ecs_task_execution_role" {
   description = "value of the ecs task execution role"
 }
-variable "container_name" {
-  description = "value of the container name"
-}
+# variable "container_name" {
+#   description = "value of the container name"
+# }
 variable "ecr_image" {
   description = "value of the ecr image"
 }
@@ -495,6 +495,18 @@ variable "aurorards_cluster-sub_grp_name" {
 
 ## SG ##
 
+# variable "pub_alb-sg" {
+#   description = "alb sec group"
+# }
+
+# variable "ecs-sg" {
+#   description = "ecs sec group"
+# }
+
+# variable "rds-postgre_sql-sg" {
+#   description = "rds sec group"
+# }
+
 variable "pub_alb-sg" {
   description = "alb sec group"
 }
@@ -507,21 +519,6 @@ variable "rds-postgre_sql-sg" {
   description = "rds sec group"
 }
 
-variable "pub_alb-sg" {
-  description = "alb sec group"
-}
-
-variable "ecs-sg" {
-  description = "ecs sec group"
-}
-
-variable "rds-postgre_sql-sg" {
-  description = "rds sec group"
-}
-
-variable "vpc_id" {
-  description = "vpc id"
-}
 variable "alb_sg_from_port" {
   description = "alb sg from port"
 }
